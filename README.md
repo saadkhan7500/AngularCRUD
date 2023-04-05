@@ -1,2 +1,2 @@
 # AngularCRUD
-created crud application using angular + spring boot
+creating crud application using angular + spring boot
