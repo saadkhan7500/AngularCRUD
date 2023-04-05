@@ -18,6 +18,7 @@ import { FormsModule } from '@angular/forms';
 import { UserService } from './service/user.service';
 import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { MatTableModule } from '@angular/material/table';
     ReadComponent,
     UpdateComponent,
     DeleteComponent,
-    MainComponent
+    MainComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
