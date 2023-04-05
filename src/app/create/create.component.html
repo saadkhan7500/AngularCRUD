@@ -1,0 +1,35 @@
+
+<div class="create">
+    <h2>Registration Form</h2>
+    <form (ngSubmit)="addUser()" class="example-form">
+        <mat-form-field class="example-full-width field"  appearance="outline">
+        <mat-label>Name</mat-label>
+        <input  name="name" [(ngModel)]="data.name" matInput placeholder="Name" >
+        </mat-form-field><br>
+    
+        <mat-form-field class="example-full-width field"  appearance="outline">
+        <mat-label>Email</mat-label>
+        <input name="email" [(ngModel)]="data.email" matInput placeholder="Email" >
+        </mat-form-field><br>
+
+        <mat-form-field class="example-full-width field"  appearance="outline">
+            <mat-label>Phone</mat-label>
+            <input name="phone" [(ngModel)]="data.phone" matInput placeholder="Phone" >
+        </mat-form-field><br>
+
+        <mat-form-field class="example-full-width field"  appearance="outline">
+            <mat-label>Password</mat-label>
+            <input name="password"  type="password"  [(ngModel)]="data.password" matInput placeholder="Password" >
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width field"  appearance="outline">
+            <mat-label>Confirm Password</mat-label>
+            <input  matInput placeholder="Email">
+        </mat-form-field>
+
+        <div class="text">
+            <button type="submit"  mat-raised-button color="primary">send</button>
+            <button type="reset"  mat-raised-button color="accent">reset</button>
+        </div>
+    </form>
+</div>

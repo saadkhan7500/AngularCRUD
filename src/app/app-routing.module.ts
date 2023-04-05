@@ -1,7 +1,18 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CreateComponent } from './create/create.component';
+import { DeleteComponent } from './delete/delete.component';
+import { MainComponent } from './main/main.component';
+import { ReadComponent } from './read/read.component';
+import { UpdateComponent } from './update/update.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path: '',component:MainComponent},
+  {path: 'create',component:CreateComponent},
+  {path:'read',component:ReadComponent},
+  {path:'update',component:UpdateComponent},
+  {path:'delete',component:DeleteComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

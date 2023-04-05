@@ -1,0 +1,19 @@
+.create
+{
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 8%;
+    width: 50%;
+    margin-left: 25%;
+}
+.field
+{
+    width: 70%;
+}
+.text 
+{
+    text-align: center;
+}
+.create button{
+    margin: 5px;
+}

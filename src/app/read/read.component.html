@@ -1,0 +1,17 @@
+<div *ngIf="users[0]==null">
+<p>no users record available</p>
+</div>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+    </tr>
+    <tr *ngFor="let data of users">
+        <td>{{data.id}}</td>
+        <td>{{data.name}}</td>
+        <td>{{data.email}}</td>
+        <td>{{data.phone}}</td>
+    </tr>
+</table>
